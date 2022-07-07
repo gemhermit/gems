@@ -4,12 +4,13 @@ background: # 既是博客的背景，又是文章默认头图
     width: 1280
     height: 726
 favicon:
-  href: /favicon.ico # 网站图标
+  href: https://devbago.oss-cn-hangzhou.aliyuncs.com/img/gem/logos.png # 网站图标
   type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 function: # 功能开关，可选值（true,false）
   globalToc: true # 开启该功能会自动开启文章 TOC（文章目录） 功能
-  wordCount: false # 是否开启文章字数统计 (true, false)
+  wordCount: true # 是否开启文章字数统计 (true, false)
+ 
 
 imageCDN: # 图片 CDN 功能
   enable: false # 开启该功能  
@@ -28,7 +29,7 @@ menu:
         - /
         - icon-home
     文章归档:
-        - /archive.html
+        - /archives.html
         - icon-container
     我的朋友:
         - /py.html
@@ -71,7 +72,7 @@ widgets:
                 - icon-zhihu
                 - rgb(30, 136, 229)
                 - rgba(30, 136, 229, .1)
-            公众号:
+            微信公众号:
                 - h
                 - icon-wechat-fill
                 - rgb(76, 175, 80)
@@ -87,7 +88,7 @@ widgets:
                 - rgb(59, 151, 239)
                 - rgba(59, 151, 239, .1)
             RSS:
-                - https://nexmoe.com/atom.xml
+                - https://gem.bago.top/atom.xml
                 - icon-rss
                 - rgb(247, 132, 34)
                 - rgba(247, 132, 34, .1)
@@ -113,7 +114,7 @@ widgets:
     - name: recent_posts
       enable: true
     - name: link #settings: widgetLink
-      enable: true
+      enable: false
       options: 
         widgetLink: #链接组件
             - title: 贝谷
@@ -125,14 +126,30 @@ copyTip: "著作权归作者所有。\n商业转载请联系作者获得授权�
 
 slotHead: ''
 
-slotFooter: ''
+slotFooter: '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3709160807018181"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3709160807018181"
+     data-ad-slot="7001621842"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>'
 
 # 自定义侧边栏尾部内容
-slotSidebar: '<br><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602012462"><img height="12px" src="https://devbago.oss-cn-hangzhou.aliyuncs.com/img/beian.png"/>浙公网安备33010602012462号</a><br>'
+slotSidebar: '<br><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602012462"><img height="12px" src="https://devbago.oss-cn-hangzhou.aliyuncs.com/img/beian.png"/>浙公网安备33010602012462号</a><br>
+'
+#<a target="_blank" visibility:hidden href="beian.miit.gov.cn/">浙ICP备202200????号</a>
 
 # 评论框插槽
-slotComment: '请在你的配置文件中设置评论框插槽'
+slotComment:
+#comment: valine
+#valine: 
+ # appId: QmQG1aNQog2pFpsxWPKtMehS-9Nh9j0Va
+  #appKey: v2J5MLe7TvRQ669LRgqotVXi
 
-slotCopyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 </a> 协议进行许可'
+slotCopyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
 
 slotArticleEnd: ''
