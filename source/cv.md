@@ -11,6 +11,8 @@ permalink: cv.html
 - 性别 男	
 - 面貌 群众
 - 性格 INTJ-A(建筑师)
+- 邮箱 xizhe.official@gmail.com
+- 位置 中国·杭州
 
 ## 教育背景
 - 2007.8-2010.6	  浙江省交通厅幼儿园      	学前教育
@@ -25,9 +27,10 @@ permalink: cv.html
 - 2023.9-2024.9   杭州电子科技大学Hello World社-人工智能部	部长
 - 2024.9-2025.9   中国计算机学会杭州电子科技大学学生分会	执行委员
 
-## 工作经历
+## 项目经历
+- 2024.4-2024.10 杭州瑞成  大模型/后端 负责：文生图/文搜图/图搜图/人脸识别系统开发
 - 2023.6-2024.12  贝谷   flutter开发与维护		产品：[知洞/Intellici](https://intellici.bago.top)
-- 2025.1-至今  江苏霖承科技有限公司   前端		产品：[AI Pet Media](https://aipet.media)
+- 2025.1-至今  江苏霖承   开发		产品：[AI Pet Media](https://aipet.media)
 
 ## 获奖荣誉
 
@@ -50,3 +53,26 @@ permalink: cv.html
 - [ ] 语言水平：大学英语六级（CET6）TOFEL(托福)
 - [ ] 语言水平：标准日本语能力测试（JLPT） N2
 - [ ] 计算机水平：国家计算机等级四级
+
+## 技术栈
+### 大前端
+- **flutter** 跨平台开发 3年以上-资深
+- react/next.js 能够独立完成产品开发上线
+- Vue 掌握
+### 后端
+- **python** 资深
+- C++ 掌握
+- Go 了解
+- 大数据（HDFS、MapReduce、Hive）掌握
+- 数据库（MySql，MongoDB） 掌握
+- 云计算（Docker，k8s）了解
+### AI
+- **大模型** Prompt/微调/工程化 
+- yolo
+- transformer
+- CNN
+- Stable Diffusion
+- 主要做工程化/暂时还没有论文
+
+### 其他
+- web3 了解

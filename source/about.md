@@ -27,10 +27,6 @@ nogem: true
 
 业余一段选手,实力尚存
 
-### 绘画&摄影
-
-重新定义随手画/拍
-
 ### 社会学研究
 
 努力让社会走上更正确的道路
@@ -41,7 +37,7 @@ nogem: true
 
 关注公众号
 
-![微信公众号](https://devbago.oss-cn-hangzhou.aliyuncs.com/img/gem/wx-gem.png)
+![微信公众号](https://oax.wzznft.com/i/2025/02/17/nu62i1.png)
 
 ## 其他
 
