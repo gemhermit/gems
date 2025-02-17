@@ -17,7 +17,7 @@ nogem: true
 ## 我的作品
 
 - [贝谷-你的下一代上网门户](https://bago.top)
-- [知洞-刷题上知洞](intellici.bago.top)
+- [知洞-刷题上知洞](https://intellici.bago.top)
 - 新媒体矩阵
 - 开发中项目（可以期待一下）
 
