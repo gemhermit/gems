@@ -37,7 +37,7 @@ nogem: true
 
 关注公众号
 
-![微信公众号](https://oax.wzznft.com/i/2025/02/17/nu62i1.png)
+![微信公众号](https://s21.ax1x.com/2025/02/17/pEMEbgH.png)
 
 ## 其他
 

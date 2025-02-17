@@ -1,10 +1,10 @@
-avatar: https://devbago.oss-cn-hangzhou.aliyuncs.com/img/gem/logo.jpg # 网站 Logo
+avatar: https://s21.ax1x.com/2025/02/17/pEMEXDI.png # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
     path: https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png
     width: 1280
     height: 726
 favicon:
-  href: https://devbago.oss-cn-hangzhou.aliyuncs.com/img/gem/logos.png # 网站图标
+  href: https://s21.ax1x.com/2025/02/17/pEMEXDI.png # 网站图标
   type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 function: # 功能开关，可选值（true,false）
@@ -68,12 +68,12 @@ widgets:
                 - rgb(231, 106, 141)
                 - rgba(231, 106, 141, .1) 
             知乎:
-                - https://www.zhihu.com/people/bao-shi-ju-shi-cn
+                - https://www.zhihu.com/people/gemhermit
                 - icon-zhihu
                 - rgb(30, 136, 229)
                 - rgba(30, 136, 229, .1)
             微信公众号:
-                - about.html/#联系我
+                - about/#联系我
                 - icon-wechat-fill
                 - rgb(76, 175, 80)
                 - rgba(76, 175, 80, .1)
