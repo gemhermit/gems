@@ -28,9 +28,31 @@ permalink: cv.html
 - 2024.9-2025.9   中国计算机学会杭州电子科技大学学生分会	执行委员
 
 ## 项目经历
-- 2024.4-2024.10 杭州瑞成  大模型/后端 负责：文生图/文搜图/图搜图/人脸识别系统开发
-- 2023.6-2024.12  贝谷   flutter开发与维护		产品：[知洞/Intellici](https://intellici.bago.top)
-- 2025.1-至今  江苏霖承   开发		产品：[AI Pet Media](https://aipet.media)
+- **杭州瑞成信息技术股份有限公司 | 大模型研发工程师**
+  *(2024.4-2024.10 横向/校企合作项目)*
+  **产品**：小瑞文件助手（AI多模态内容生成系统）
+
+  - 主导文生图系统开发，基于ComfyUI构建工作流引擎，通过节点级GPU资源调度优化，提升推理速度40%；设计Lora微调框架，训练行业定制化模型
+  - 搭建百万级图像检索系统，采用Fastapi及Faiss向量数据库实现跨模态Embedding检索，结合Faiss索引优化，达成毫秒级响应；设计图片预处理Pipeline，
+  - 研发人脸识别引擎，集成Deepface实现90%+准确率分类，通过区域裁剪+渐进式分辨率压缩，降低单图处理耗时
+
+- **贝谷科技 | 全栈开发工程师**
+  *(2023.6-2024.12 自雇项目)*
+  **产品**：[知洞/Intellici](https://intellici.bago.top)（AI教育SaaS平台）[知洞/Intellici](https://bago.top/) (导航/AI搜索)
+
+  - 基于Flutter构建高交互刷题系统，实现动态题型渲染（支持6题型模板）、实时错题分析（准确率追踪算法）及多端数据同步，获ICT、拯救者杯等多项行业奖项
+  - 设计高性能REST API体系，采用JWT令牌分层鉴权方案；通过MySQL索引优化+查询缓存，将复杂题库检索耗时从3.2s降至180ms
+  - 集成大模型对话引擎，支持流式传输协议；构建Prompt工程框架，提升学科知识问答准确率。
+
+- **南京霖承智能科技 | Next.js全栈开发（实习）**
+  *(2025.1-2025.3)*
+
+  **产品**：[AI Pet Media](https://aipet.media) | [AI朱朱](https://aizhuzhu.agentworld.chat) 
+
+  - 开发多模态宠物视频生成系统，使用图生图，图生视频模型，通过prompt优化，流程优化解决特征一致性难题，基于Next.js实现SSR/ISR混合渲染架构，通过R2对象存储CDN加速；完成多支付网关集成（PayPal/Stripe），PostgreSQL实现数据存储。
+  - 构建Kol知识库引擎，采用RAG架构实现实时数据检索，通过Dify平台配置多模态对话流程，支持图片上传。
+
+  
 
 ## 获奖荣誉
 
@@ -71,8 +93,7 @@ permalink: cv.html
 - yolo
 - transformer
 - CNN
-- Stable Diffusion
-- 主要做工程化/暂时还没有论文
+- Stable Diffusiond
 
 ### 其他
 - web3 了解
