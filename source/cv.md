@@ -38,7 +38,7 @@ permalink: cv.html
 
 - **贝谷科技 | 全栈开发工程师**
   *(2023.6-2024.12 自雇项目)*
-  **产品**：[知洞/Intellici](https://intellici.bago.top)（AI教育SaaS平台）[知洞/Intellici](https://bago.top/) (导航/AI搜索)
+  **产品**：[知洞/Intellici](https://intellici.bago.top)（AI教育SaaS平台）[贝谷](https://bago.top/) (导航/AI搜索)[关于我们](https://about.bago.top/) (产品介绍界面)
 
   - 基于Flutter构建高交互刷题系统，实现动态题型渲染（支持6题型模板）、实时错题分析（准确率追踪算法）及多端数据同步，获ICT、拯救者杯等多项行业奖项
   - 设计高性能REST API体系，采用JWT令牌分层鉴权方案；通过MySQL索引优化+查询缓存，将复杂题库检索耗时从3.2s降至180ms
