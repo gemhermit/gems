@@ -19,6 +19,7 @@ if (is_archive()){
 <meta charset="UTF-8">
 <meta name="keywords" content="<%= config.keywords %>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<link rel="canonical" href="<%= config.url.replace(/\/$/, '') %>/<%= (page.path || '').replace(/^\/+/, '') %>">
 
 <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
 <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
@@ -51,10 +52,11 @@ if (is_archive()){
 
 <%- js_auto_version('js/app') %>
 
-<% if (theme.copyText) { %>
-    <script>var copyTip = "<%- theme.copyText %>"</script>
-<% } %> 
+<% if (theme.copyTip) { %>
+    <script>var copyTip = "<%- theme.copyTip %>"</script>
+<% } %>
 
 <%- theme.slotHead %>
 
-<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"></noscript>

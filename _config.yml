@@ -4,12 +4,12 @@
 
 # Site
 title: 宝石居士
-subtitle: ''
-description: ''
+subtitle: '宝石居士的个人博客 - 思想碰撞与技术分享'
+description: '宝石居士的个人博客，专注于计算机、教育、社会等话题的思想碰撞与分享。'
 keywords: 宝石居士,博客,计算机,教育,社会,思想碰撞
 author: 宝石居士
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -122,3 +122,10 @@ template:
 #music
 aplayer:
   meting: true
+
+# Sitemap SEO
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true

@@ -76,5 +76,5 @@ function sinput() {
 
 // 搜索词格式化
 function format(word) {
-    return word.replace(/[ ]/g, '').split(' ');
+    return word.trim().split(/\s+/).filter(Boolean);
 }

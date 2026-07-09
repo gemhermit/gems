@@ -10,7 +10,7 @@ module.exports = class extends Component {
         const Body = require(`./_layout/${layout}/body`);
         const SearchBox = require('./_partial/searchbox');
         return (
-            <html lang={language ? language.substr(0, 2) : ''}>
+            <html lang={language || ''}>
                 <head
                     dangerouslySetInnerHTML={{
                         __html: partial('_partial/head')

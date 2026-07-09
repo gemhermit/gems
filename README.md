@@ -8,16 +8,17 @@
 
 - **站点地址**: https://gem.bago.top
 - **博客主题**: Nexmoe
-- **框架版本**: Hexo 6.2.0
+- **框架版本**: Hexo 7.3.0
 
 ## 功能特性
 
 - 📝 支持 Markdown 文章编写
 - 🎨 使用 Nexmoe 主题，界面简洁美观
-- 🎵 集成 APlayer 音乐播放器
+- 🎵 集成 APlayer/Meting 音乐播放器
 - 📊 文章字数统计功能
 - 📡 RSS/Atom 订阅支持
-- 💬 Valine 评论系统
+- 🗺️ Sitemap 站点地图（SEO）
+- 🤖 robots.txt 搜索引擎抓取规则
 - 🏷️ 标签和分类管理
 - 📱 响应式设计，支持移动端访问
 
@@ -25,7 +26,7 @@
 
 ### 环境要求
 
-- Node.js >= 12.0
+- Node.js >= 14.0（Hexo 7 要求）
 - Git
 
 ### 安装
@@ -106,8 +107,8 @@ gem/
 
 ## 技术栈
 
-- **框架**: Hexo 6.2.0
-- **主题**: Nexmoe 4.0.1
+- **框架**: Hexo 7.3.0
+- **主题**: Nexmoe 4.2.2
 - **渲染引擎**:
   - hexo-renderer-marked (Markdown)
   - hexo-renderer-ejs (模板)
@@ -115,9 +116,9 @@ gem/
 - **插件**:
   - hexo-deployer-git (自动部署)
   - hexo-generator-feed (RSS 生成)
-  - hexo-tag-aplayer (音乐播放器)
+  - hexo-generator-sitemap (SEO 站点地图)
+  - aplayer / meting (音乐播放器)
   - hexo-wordcount (字数统计)
-  - valine (评论系统)
 
 ## 部署
 
