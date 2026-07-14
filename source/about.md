@@ -43,15 +43,13 @@ nogem: true
 
 1. [简历](/cv.html)
 
-2. [交友帖](/blinddate.html)
-
-3.  ```
+2.  ```
     开源协议
     Hexo:MIT License(more on https://github.com/hexojs/hexo/blob/master/LICENSE)
     hexo-theme-nexmoe:Apache License Version 2.0, January 2004
     (more on https://github.com/theme-nexmoe/hexo-theme-nexmoe/blob/master/LICENSE)     
     ```
     
-4. 您的隐私：本站为静态站点，不收集储存您的用户数据，网站采用了部分第三方插件，并引入相关服务商，包括[leanclond](https://www.leancloud.cn/) (评论存储服务)、[Google Analytics](https://analytics.google.com/)（流量分析）和[Google Adsense](https://www.google.com/adsense)（广告服务），本站与其合作，共同保护您的个人隐私。
+3. 您的隐私：本站为静态站点，不收集储存您的用户数据，网站采用了部分第三方插件，并引入相关服务商，包括[leanclond](https://www.leancloud.cn/) (评论存储服务)、[Google Analytics](https://analytics.google.com/)（流量分析）和[Google Adsense](https://www.google.com/adsense)（广告服务），本站与其合作，共同保护您的个人隐私。
 
-5. 版权：文章和图片著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。部分引用的图片版权归原作者所有。作品中部分软件已申请计算机软件著作权，受相关法律保护。
+4. 版权：文章和图片著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。部分引用的图片版权归原作者所有。作品中部分软件已申请计算机软件著作权，受相关法律保护。

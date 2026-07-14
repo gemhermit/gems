@@ -97,5 +97,11 @@ permalink: cv.html
 - CNN
 - Stable Diffusiond
 
+### 硬件与嵌入式
+- 嵌入式开发（ESP32、STM32）掌握基础开发与调试
+- 数字电路与 PCB 设计：原理图绘制、基础 PCB Layout
+- 常用传感器、执行器集成与控制
+- 硬件通信接口：UART、I2C、SPI
+
 ### 其他
 - web3 了解

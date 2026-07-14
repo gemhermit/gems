@@ -2,27 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gem.bago.top/donate.html</loc>
-    
-    <lastmod>2025-11-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gem.bago.top/cv.html</loc>
     
-    <lastmod>2025-04-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gem.bago.top/blinddate.html</loc>
-    
-    <lastmod>2025-02-17</lastmod>
+    <lastmod>2026-07-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +13,16 @@
   <url>
     <loc>https://gem.bago.top/about.html</loc>
     
-    <lastmod>2025-02-17</lastmod>
+    <lastmod>2026-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gem.bago.top/donate.html</loc>
+    
+    <lastmod>2025-11-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,22 +76,22 @@
 
   <url>
     <loc>https://gem.bago.top/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://gem.bago.top/tags/Genshin-Impect/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://gem.bago.top/tags/%E5%A4%A7%E5%AD%A6/</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gem.bago.top/tags/%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://gem.bago.top/tags/Genshin-Impect/</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -108,15 +99,15 @@
 
   
   <url>
-    <loc>https://gem.bago.top/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://gem.bago.top/categories/%E6%95%99%E8%82%B2/</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gem.bago.top/categories/%E6%95%99%E8%82%B2/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://gem.bago.top/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
