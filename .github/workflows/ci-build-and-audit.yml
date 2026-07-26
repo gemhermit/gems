@@ -1,0 +1,54 @@
+name: CI Build & Security Audit
+
+# 在 push 到 master 和所有 PR 上触发
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build & Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 安全审计：发现 high/critical 漏洞时让 CI 失败
+      # 这样 Dependabot 升级 PR 如果引入新漏洞会自动被拦截
+      - name: Security audit (high & critical only)
+        run: npm audit --audit-level=high --omit=dev
+        continue-on-error: false
+
+      # 构建验证：确保博客能正常生成静态文件
+      - name: Build site
+        run: |
+          npm run clean
+          npm run build
+
+      # 检查 public/ 是否生成了关键文件
+      - name: Verify build output
+        run: |
+          if [ ! -f "public/index.html" ]; then
+            echo "❌ public/index.html not found, build failed"
+            exit 1
+          fi
+          echo "✅ Build output verified"
+          echo "Generated files: $(find public -type f | wc -l)"

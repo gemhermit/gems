@@ -1,0 +1,52 @@
+name: Dependabot auto-merge
+
+# 仅当 PR 由 dependabot[bot] 发起时触发
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: write       # squash merge 推送到 master
+  pull-requests: write  # 操作 PR（标签、合并）
+  checks: read          # 读取 CI 状态以等待检查通过
+
+concurrency:
+  group: dependabot-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Fetch Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Print update summary
+        run: |
+          echo "Update type: ${{ steps.metadata.outputs.update-type }}"
+          echo "Dependency:  ${{ steps.metadata.outputs.dependency-names }}"
+          echo "From:        ${{ steps.metadata.outputs.previous-version }}"
+          echo "To:          ${{ steps.metadata.outputs.new-version }}"
+
+      # 仅对 patch / minor 升级启用自动合并
+      # major 升级必须人工 review（避免 Hexo 8、Node 22 等破坏性升级）
+      - name: Enable auto-merge (patch & minor only)
+        if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor' }}
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # major 升级打标签提醒人工 review
+      - name: Label major updates for manual review
+        if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-major' }}
+        run: |
+          gh pr edit "$PR_URL" --add-label "needs-manual-review"
+          gh pr comment "$PR_URL" --body "⚠️ 这是主版本升级，已禁用自动合并。请人工验证兼容性后再合并。"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

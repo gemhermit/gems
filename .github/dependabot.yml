@@ -1,7 +1,55 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 20
+  # npm 主依赖（package.json / package-lock.json）
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Asia/Shanghai
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    commit-message:
+      prefix: "chore(deps)"
+      include: scope
+    labels:
+      - "dependencies"
+      - "npm"
+    groups:
+      # Hexo 核心 + 渲染器 + 生成器打成一个 PR，避免 PR 碎片化
+      hexo-ecosystem:
+        patterns:
+          - "hexo"
+          - "hexo-*"
+          - "hexo-theme-nexmoe"
+        update-types:
+          - "minor"
+          - "patch"
+      # 前端资源（aplayer / meting 等）单独一组
+      frontend-assets:
+        patterns:
+          - "aplayer"
+          - "meting"
+          - "hexo-wordcount"
+        update-types:
+          - "minor"
+          - "patch"
+    # 显式忽略大版本升级，避免 Hexo 8 / Node 22 这种破坏性升级自动触发
+    ignore:
+      - dependency-name: "hexo"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "hexo-theme-nexmoe"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions 自身升级（保证 CI 工作流用的是最新 action 版本）
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "chore(ci)"
+      include: scope
+    labels:
+      - "ci"
+      - "github-actions"
